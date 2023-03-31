@@ -2,11 +2,11 @@ package net.triflicacid.first.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.triflicacid.first.FirstMod;
 import net.triflicacid.first.item.custom.DiceItem;
+import net.triflicacid.first.item.custom.DrinkExplodeItem;
 
 public class ModItems {
     /** Items */
@@ -18,7 +18,7 @@ public class ModItems {
     public static final Item URANIUM_INGOT = registerItem("uranium_ingot", new Item(new FabricItemSettings().group(ModItemGroup.STUFF)));
     public static final Item PLUTONIUM_INGOT = registerItem("plutonium_ingot", new Item(new FabricItemSettings().group(ModItemGroup.STUFF)));
     public static final Item CAESIUM_DROPLET = registerItem("caesium_droplet", new Item(new FabricItemSettings().group(ModItemGroup.STUFF)));
-    public static final Item VIAL_OF_CAESIUM = registerItem("vial_of_caesium", new Item(new FabricItemSettings().group(ModItemGroup.STUFF).maxCount(1)));
+    public static final Item VIAL_OF_CAESIUM = registerItem("vial_of_caesium", new DrinkExplodeItem(new FabricItemSettings().group(ModItemGroup.STUFF).maxCount(1)));
     public static final Item PIPETTE_OF_CAESIUM = registerItem("pipette_of_caesium", new Item(new FabricItemSettings().group(ModItemGroup.STUFF).maxCount(1)));
 
     public static void registerModItems() {
