@@ -5,5 +5,8 @@
   "item.first.uranium_ingot": "Uranium Ingot",
   "item.first.plutonium_ingot": "Plutonium Ingot",
   "item.first.caesium_droplet": "Caesium Droplet",
-  "item.first.vial_of_caesium": "Caesium Vial"
+  "item.first.vial_of_caesium": "Caesium Vial",
+
+  "block.first.plurium_ore": "Plurium Ore",
+  "block.first.caesium_ore": "Caesium Residue"
 }
