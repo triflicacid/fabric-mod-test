@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "#@#",
+    " # "
+  ],
+  "key": {
+    "@": {
+      "item": "first:glass_vial"
+    },
+    "#": {
+      "item": "first:pipette_of_caesium"
+    }
+  },
+  "result": {
+    "item": "first:vial_of_caesium"
+  }
+}

@@ -9,11 +9,15 @@ import net.triflicacid.first.FirstMod;
 
 public class ModItems {
     /** Items */
+    public static final Item GLASS_VIAL = registerItem("glass_vial", new Item(new FabricItemSettings().group(ModItemGroup.STUFF)));
+    public static final Item PIPETTE = registerItem("pipette", new Item(new FabricItemSettings().group(ModItemGroup.STUFF)));
+    public static final Item PLURIUM_DUST = registerItem("plurium_dust", new Item(new FabricItemSettings().group(ModItemGroup.STUFF)));
     public static final Item PLURIUM_NUGGET = registerItem("plurium_nugget", new Item(new FabricItemSettings().group(ModItemGroup.STUFF)));
     public static final Item URANIUM_INGOT = registerItem("uranium_ingot", new Item(new FabricItemSettings().group(ModItemGroup.STUFF)));
     public static final Item PLUTONIUM_INGOT = registerItem("plutonium_ingot", new Item(new FabricItemSettings().group(ModItemGroup.STUFF)));
     public static final Item CAESIUM_DROPLET = registerItem("caesium_droplet", new Item(new FabricItemSettings().group(ModItemGroup.STUFF)));
     public static final Item VIAL_OF_CAESIUM = registerItem("vial_of_caesium", new Item(new FabricItemSettings().group(ModItemGroup.STUFF).maxCount(1)));
+    public static final Item PIPETTE_OF_CAESIUM = registerItem("pipette_of_caesium", new Item(new FabricItemSettings().group(ModItemGroup.STUFF).maxCount(1)));
 
     public static void registerModItems() {
         FirstMod.LOGGER.debug(FirstMod.MOD_ID + ": registering items");

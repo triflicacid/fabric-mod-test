@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "first:pipette"
+    },
+    {
+      "item": "first:caesium_droplet"
+    }
+  ],
+  "result": {
+    "item": "first:pipette_of_caesium"
+  }
+}

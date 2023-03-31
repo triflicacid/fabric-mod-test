@@ -1,12 +1,18 @@
 {
   "itemGroup.first.stuff": "Mod Stuff",
 
-  "item.first.plurium_nugget": "Plurium Nugget",
-  "item.first.uranium_ingot": "Uranium Ingot",
-  "item.first.plutonium_ingot": "Plutonium Ingot",
-  "item.first.caesium_droplet": "Caesium Droplet",
-  "item.first.vial_of_caesium": "Caesium Vial",
+  "item.first.glass_vial": "Glass Vial",
+  "item.first.pipette": "Pipette",
 
   "block.first.plurium_ore": "Plurium Ore",
-  "block.first.caesium_ore": "Caesium Residue"
+  "item.first.plurium_nugget": "Plurium Nugget",
+  "item.first.plurium_dust": "Plurium Dust",
+  "item.first.uranium_ingot": "Uranium Ingot",
+  "block.first.uranium_block": "Uranium Block",
+  "item.first.plutonium_ingot": "Plutonium Ingot",
+
+  "block.first.caesium_ore": "Caesium Residue",
+  "item.first.caesium_droplet": "Caesium Droplet",
+  "item.first.pipette_of_caesium": "Pipette of Caesium",
+  "item.first.vial_of_caesium": "Vial of Caesium"
 }
