@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "first:block/dice_block" }
+  }
+}

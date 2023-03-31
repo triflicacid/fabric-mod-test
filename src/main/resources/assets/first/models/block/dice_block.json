@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "up": "first:block/die_1",
+    "down": "first:block/die_2",
+    "south": "first:block/die_3",
+    "north": "first:block/die_4",
+    "west": "first:block/die_5",
+    "east": "first:block/die_6",
+    "particle": "first:item/dice"
+  }
+}

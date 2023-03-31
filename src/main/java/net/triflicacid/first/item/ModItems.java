@@ -6,9 +6,11 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.triflicacid.first.FirstMod;
+import net.triflicacid.first.item.custom.DiceItem;
 
 public class ModItems {
     /** Items */
+    public static final Item DICE = registerItem("dice", new DiceItem(new FabricItemSettings().group(ModItemGroup.STUFF)));
     public static final Item GLASS_VIAL = registerItem("glass_vial", new Item(new FabricItemSettings().group(ModItemGroup.STUFF)));
     public static final Item PIPETTE = registerItem("pipette", new Item(new FabricItemSettings().group(ModItemGroup.STUFF)));
     public static final Item PLURIUM_DUST = registerItem("plurium_dust", new Item(new FabricItemSettings().group(ModItemGroup.STUFF)));

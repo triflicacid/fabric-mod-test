@@ -1,6 +1,9 @@
 {
   "itemGroup.first.stuff": "Mod Stuff",
 
+  "block.first.dice_block": "Dice Block",
+  "item.first.dice": "Dice",
+
   "item.first.glass_vial": "Glass Vial",
   "item.first.pipette": "Pipette",
 
