@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "lit=false": { "model": "first:block/uranium_lamp_off" },
+    "lit=true": { "model": "first:block/uranium_lamp_on" }
+  }
+}

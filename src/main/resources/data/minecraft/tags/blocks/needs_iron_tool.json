@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "first:plurium_ore"
+    "first:plurium_ore",
+    "first:caesium_ore"
   ]
 }

@@ -13,14 +13,16 @@ import net.minecraft.util.registry.Registry;
 import net.triflicacid.first.FirstMod;
 import net.triflicacid.first.block.custom.CaesiumBombBlock;
 import net.triflicacid.first.block.custom.SightBlock;
+import net.triflicacid.first.block.custom.UraniumLampBlock;
 import net.triflicacid.first.item.ModItemGroup;
 
 public class ModBlocks {
 
-    public static final Block PLURIUM_ORE = registerBlock("plurium_ore", new Block(FabricBlockSettings.of(Material.METAL).luminance(4).strength(2f)), ModItemGroup.STUFF);
-    public static final Block CAESIUM_ORE = registerBlock("caesium_ore", new Block(FabricBlockSettings.of(Material.METAL).strength(2f)), ModItemGroup.STUFF);
+    public static final Block PLURIUM_ORE = registerBlock("plurium_ore", new Block(FabricBlockSettings.of(Material.METAL).luminance(4).strength(2f).requiresTool()), ModItemGroup.STUFF);
+    public static final Block CAESIUM_ORE = registerBlock("caesium_ore", new Block(FabricBlockSettings.of(Material.METAL).strength(2f).requiresTool()), ModItemGroup.STUFF);
     public static final Block CAESIUM_BOMB = registerBlock("caesium_bomb", new CaesiumBombBlock(FabricBlockSettings.of(Material.TNT)), ModItemGroup.STUFF);
-    public static final Block URANIUM_BLOCK = registerBlock("uranium_block", new Block(FabricBlockSettings.of(Material.GLASS).strength(5f).luminance(10)), ModItemGroup.STUFF);
+    public static final Block URANIUM_BLOCK = registerBlock("uranium_block", new Block(FabricBlockSettings.of(Material.GLASS).strength(5f).luminance(10).requiresTool()), ModItemGroup.STUFF);
+    public static final Block URANIUM_LAMP = registerBlock("uranium_lamp", new UraniumLampBlock(FabricBlockSettings.of(Material.GLASS).luminance(st -> st.get(UraniumLampBlock.LIT) ? 15 : 0)), ModItemGroup.STUFF);
     public static final Block DICE_BLOCK = registerBlock("dice_block", new Block(FabricBlockSettings.of(Material.GLASS).sounds(BlockSoundGroup.GLASS)));
     public static final Block SIGHT_BLOCK = registerBlock("sight_block", new SightBlock(FabricBlockSettings.of(Material.STONE).sounds(BlockSoundGroup.STONE)), ModItemGroup.STUFF);
 
