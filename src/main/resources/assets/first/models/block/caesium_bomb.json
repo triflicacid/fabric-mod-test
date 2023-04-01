@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "up": "first:block/caesium_bomb_top",
+    "down": "first:block/caesium_bomb_top",
+    "south": "first:block/caesium_bomb_text",
+    "north": "first:block/caesium_bomb_text",
+    "west": "first:block/caesium_bomb_side",
+    "east": "first:block/caesium_bomb_side",
+    "particle": "first:block/caesium_bomb_top"
+  }
+}

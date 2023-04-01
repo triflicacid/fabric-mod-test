@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "first:vial_of_caesium"
+    }
+  ],
+  "result": {
+    "item": "first:caesium_droplet",
+    "count": 3
+  }
+}

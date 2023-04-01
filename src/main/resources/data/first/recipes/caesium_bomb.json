@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ABA",
+    "###",
+    "###"
+  ],
+  "key": {
+    "A": {
+      "item": "first:plurium_nugget"
+    },
+    "B": {
+      "item": "first:caesium_droplet"
+    },
+    "#": {
+      "item": "first:vial_of_caesium"
+    }
+  },
+  "result": {
+    "item": "first:caesium_bomb"
+  }
+}

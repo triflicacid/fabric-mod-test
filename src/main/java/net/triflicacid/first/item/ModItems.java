@@ -14,6 +14,7 @@ public class ModItems {
     public static final Item DICE = registerItem("dice", new DiceItem(new FabricItemSettings().group(ModItemGroup.STUFF)));
     public static final Item GLASS_VIAL = registerItem("glass_vial", new Item(new FabricItemSettings().group(ModItemGroup.STUFF)));
     public static final Item PIPETTE = registerItem("pipette", new PipetteableItem(new FabricItemSettings().group(ModItemGroup.STUFF)));
+    public static final Item PIPETTE_OF_WATER = registerItem("pipette_of_water", new Item(new FabricItemSettings().group(ModItemGroup.STUFF).maxCount(1).recipeRemainder(PIPETTE)));
     public static final Item PLURIUM_DUST = registerItem("plurium_dust", new Item(new FabricItemSettings().group(ModItemGroup.STUFF)));
     public static final Item PLURIUM_NUGGET = registerItem("plurium_nugget", new Item(new FabricItemSettings().group(ModItemGroup.STUFF)));
     public static final Item URANIUM_INGOT = registerItem("uranium_ingot", new Item(new FabricItemSettings().group(ModItemGroup.STUFF)));
