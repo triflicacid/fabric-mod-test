@@ -8,6 +8,7 @@
   "item.first.glass_vial": "Glass Vial",
   "item.first.pipette": "Pipette",
   "item.first.pipette_of_water": "Pipette of Water",
+  "item.first.vial_of_water": "Vial of Water",
 
   "block.first.plurium_ore": "Plurium Ore",
   "item.first.plurium_nugget": "Plurium Nugget",
@@ -21,5 +22,9 @@
   "item.first.caesium_droplet": "Caesium Droplet",
   "item.first.pipette_of_caesium": "Pipette of Caesium",
   "item.first.vial_of_caesium": "Vial of Caesium",
-  "block.first.caesium_bomb": "Caesium Bomb"
+  "block.first.caesium_bomb": "Caesium Bomb",
+
+  "item.first.rapeseed_seeds": "Rapeseed Plant Seeds",
+  "item.block.rapeseed_crop": "Rapeseed Crop",
+  "item.first.vial_of_rapeseed_oil": "Vial of Rapeseed Oil"
 }

@@ -18,6 +18,7 @@ public class DrinkExplodeItem extends Item {
     }
 
     private void explode(World world, LivingEntity user) {
+        // TODO explosion doesn't deal damage??
         world.createExplosion(user, user.getX(), user.getY(), user.getZ(), 8.0f, Explosion.DestructionType.BREAK);
         user.emitGameEvent(GameEvent.EXPLODE);
     }

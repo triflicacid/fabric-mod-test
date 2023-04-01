@@ -1,28 +1,22 @@
 package net.triflicacid.first.item.custom;
 
-import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.GlassBottleItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemUsageContext;
 import net.minecraft.tag.FluidTags;
-import net.minecraft.text.Text;
-import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
-import net.minecraft.util.Identifier;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.hit.HitResult;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.registry.Registry;
 import net.minecraft.world.RaycastContext;
 import net.minecraft.world.World;
 import net.triflicacid.first.block.ModBlocks;
 import net.triflicacid.first.item.ModItems;
 
-public class PipetteableItem extends Item {
-    public PipetteableItem(Settings settings) {
+public class PipetteItem extends Item {
+    public PipetteItem(Settings settings) {
         super(settings);
     }
 
@@ -41,7 +35,6 @@ public class PipetteableItem extends Item {
 
             // caesium residue
             if (world.getBlockState(pos).getBlock() == ModBlocks.CAESIUM_ORE) {
-                itemStack.decrement(1);
                 // Give player a caesium vial
                 int slot = user.getInventory().getEmptySlot();
                 if (slot == -1) {
@@ -49,16 +42,17 @@ public class PipetteableItem extends Item {
                 } else {
                     user.getInventory().setStack(slot, new ItemStack(ModItems.PIPETTE_OF_CAESIUM));
                 }
+                // Consume pipette
+                itemStack.decrement(1);
                 // Set to stone
                 world.removeBlock(pos, false);
-                world.setBlockState(pos, Registry.BLOCK.get(new Identifier("minecraft", "stone")).getDefaultState());
+                world.setBlockState(pos, Blocks.STONE.getDefaultState());
 
                 return TypedActionResult.success(itemStack);
             }
 
             // water
             if (world.getFluidState(pos).isIn(FluidTags.WATER)) {
-                itemStack.decrement(1);
                 // Give player a water vial
                 int slot = user.getInventory().getEmptySlot();
                 if (slot == -1) {
@@ -66,6 +60,7 @@ public class PipetteableItem extends Item {
                 } else {
                     user.getInventory().setStack(slot, new ItemStack(ModItems.PIPETTE_OF_WATER));
                 }
+                itemStack.decrement(1);
 
                 return TypedActionResult.success(itemStack);
             }
